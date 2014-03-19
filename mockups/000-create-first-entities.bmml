@@ -1,0 +1,40 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1009" measuredH="521" mockupW="900" mockupH="500">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="109" y="21" w="900" h="500" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Graphen%20/%20Truly%20Complex%20Project%20/%20Starting%20up%0Agraph.en/truly-complex-project/start</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="375" y="340" w="-1" h="-1" measuredW="188" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>disabled</state>
+        <text>Go%20on%20and%20create%20this%20Entity</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Paragraph" x="375" y="205" w="409" h="85" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>First%2C%20create%20an%20Entity%20to%20represent%20some%20level%20of%20information%20you%20want%20to%20store%2C%20track%2C%20and%20connect%20to%20others.%0A%20%0AAn%20entity%20is%20like%20a%20category%2C%20a%20class%2C%20a%20genre%2C%20a%20type....%20It%20will%20spawn%20objects%2C%20which%20are%20like%2C%20well%2C%20objects%2C%20or%20instances%20for%20the%20dev%20guys.</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="375" y="145" w="-1" h="-1" measuredW="166" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Create%20your%20first%20entity</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::HRule" x="375" y="180" w="380" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::TextInput" x="375" y="305" w="395" h="-1" measuredW="79" measuredH="26" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="380" y="308" w="-1" h="-1" measuredW="370" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <href>001-create-first-entities-type-first%26bm%3B001-create-first-entities-type-first.bmml%26bm%3B001-create-first-entities-type-first.bmml%26bm%3B001-create-first-entities-type-first.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22271%2C287%2C641%2C308%22%20href%3D%22001-create-first-entities-type-first.bmml%22%20alt%3D%22001-create-first-entities-type-first%22%20id%3D%2217%22/%3E</map>
+        <text>Entity%20Name%20%28e.g.%20Product%2C%20Project%2C%20Data%2C%20User%20Story%2C%20Feature...%29</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
