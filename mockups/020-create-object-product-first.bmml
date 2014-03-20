@@ -1,0 +1,60 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1009" measuredH="521" mockupW="900" mockupH="500">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="109" y="21" w="900" h="500" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>graph.en/truly-complex-project</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::ButtonBar" x="124" y="117" w="236" h="27" measuredW="206" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs/>
+        <text>Product%2C%20Feature%2C%20+%20Add...</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="124" y="115" w="510" h="356" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="124" y="444" w="-1" h="-1" measuredW="105" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add%20a%20product</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::DataGrid" x="124" y="144" w="510" h="306" measuredW="93" measuredH="35" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hasHeader>false</hasHeader>
+        <selectedIndex>0</selectedIndex>
+        <text>New%20Product</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Canvas" x="643" y="115" w="351" h="356" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="650" y="122" w="-1" h="-1" measuredW="97" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>0</color>
+        <size>16</size>
+        <text>New%20Product</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::HRule" x="643" y="150" w="351" h="-1" measuredW="100" measuredH="10" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Paragraph" x="650" y="160" w="335" h="234" measuredW="200" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Enter%20the%20details%20of%20your%20new%20Product.%0A%20%0AYou%20can%20type%20**Markdown**%20to%20give%20some%20formatting%20to%20your%20description.%0A%20%0AIf%20you%20want%20to%20link%20to%20other%20contents%2C%20type%20%23%20and%20it%20will%20start%20some%20autocompletion%20magic%20to%20allow%20you%20to%20select%20the%20related%20content.%20It%20will%20first%20start%20the%20Entities.%20Once%20you%27ve%20selected%20an%20Entity%2C%20start%20typing%20some%20letters%20and%20it%20will%20filter%20results%20among%20the%20objects%20of%20this%20Entity%20for%20you%20to%20link%20the%20one%20you%20want.</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Paragraph" x="650" y="418" w="200" h="47" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>_Created%20at%3A_%20now%0A_Created%20by%3A_%20me%0A_History%3A_%20some%20story</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Button" x="908" y="123" w="-1" h="-1" measuredW="55" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>disabled</state>
+        <text>Track</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Icon" x="969" y="128" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>XIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

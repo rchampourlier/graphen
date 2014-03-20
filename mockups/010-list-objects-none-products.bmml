@@ -7,13 +7,15 @@
     </control>
     <control controlID="1" controlTypeID="com.balsamiq.mockups::ButtonBar" x="124" y="117" w="236" h="27" measuredW="206" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
+        <hrefs>%2C011-list-objects-none-features%26bm%3B011-list-objects-none-features.bmml%26bm%3B011-list-objects-none-features.bmml%26bm%3B011-list-objects-none-features.bmml%2C%2C%2C</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2295%2C96%2C174%2C123%22%20href%3D%22011-list-objects-none-features.bmml%22%20alt%3D%22011-list-objects-none-features%22%20id%3D%221%22/%3E%0A</map>
         <text>Product%2C%20Feature%2C%20+%20Add...</text>
       </controlProperties>
     </control>
     <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="124" y="115" w="510" h="356" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="12" controlTypeID="com.balsamiq.mockups::Paragraph" x="135" y="191" w="484" h="79" measuredW="200" measuredH="80" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Start%20adding%20some%20objects%20by%20creating%20your%20first%20product%20%21%0A%20%0AYour%20new%20product%20will%20be%20an%20Object%20of%20Entity%20%22Product%22.%20You%20will%20then%20be%20able%20to%20create%20more%20products%2C%20and%20start%20linking%20them%20together%21%20You%20will%20even%20be%20able%20to%20create%20Objects%20of%20other%20Entities%20%28like%20Feature%29%2C%20and%20link%20them%20alltogether%21</text>
+        <text>Start%20adding%20some%20objects%20by%20creating%20your%20first%20product%21%0A%20%0AYour%20new%20product%20will%20be%20an%20Object%20of%20Entity%20%22Product%22.%20You%20will%20then%20be%20able%20to%20create%20more%20products%2C%20and%20start%20linking%20them%20together%21%20You%20will%20even%20be%20able%20to%20create%20Objects%20of%20other%20Entities%20%28like%20Feature%29%2C%20and%20link%20them%20alltogether%21</text>
       </controlProperties>
     </control>
     <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="135" y="155" w="-1" h="-1" measuredW="180" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
@@ -24,6 +26,8 @@
     </control>
     <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="124" y="444" w="-1" h="-1" measuredW="105" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
+        <href>020-create-object-product-first%26bm%3B020-create-object-product-first.bmml%26bm%3B020-create-object-product-first.bmml%26bm%3B020-create-object-product-first.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C423%2C120%2C450%22%20href%3D%22020-create-object-product-first.bmml%22%20alt%3D%22020-create-object-product-first%22%20id%3D%2214%22/%3E</map>
         <text>Add%20a%20product</text>
       </controlProperties>
     </control>
