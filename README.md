@@ -28,3 +28,19 @@ Possibilities are infinite!
 ## Status
 
 Ongoing is the word...
+
+## Getting Started
+
+### Prerequisites
+
+* NodeJS with NPM: `brew install nodejs`
+* Bower: `npm install bower`
+* Gulp: `npm install gulp`
+
+### Running the project
+
+    git clone https://github.com/rchampourlier/graphen.git
+    cd graphen
+    npm install
+    bower install
+    gulp

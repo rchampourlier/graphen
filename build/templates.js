@@ -1,0 +1,1 @@
+angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("home/home.html","<strong>That\'s home!</strong>");}]);
