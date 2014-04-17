@@ -1,4 +1,4 @@
-angular.module 'graphen', [ 'ngRoute', 'graphen-home', 'templates' ]
+angular.module 'graphen', [ 'ngRoute', 'dynamic-list-input', 'graphen-home', 'graphen-entities', 'templates' ]
 
   .config ($routeProvider) ->
 

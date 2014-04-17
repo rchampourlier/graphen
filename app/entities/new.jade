@@ -1,0 +1,15 @@
+h2 Create your first entity!
+
+p First, create an Entity to represent some level of information you want to store, track, and connect to others.
+ 
+p An entity is like a category, a class, a genre, a type.... It will spawn objects, which are like, well, objects, or instances for the dev guys.
+
+dynamic-list-input(items="entities" default-item="defaultEntity")
+
+//- div(ng-repeat="entity in entities")
+//-   input(value="{{entity.name}}")
+
+div
+  h3 Debug
+  div Entities = {{ entities }}
+  div defaultEntity = {{ defaultEntity }}
