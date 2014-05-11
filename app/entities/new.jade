@@ -7,10 +7,3 @@ p An entity is like a category, a class, a genre, a type.... It will spawn objec
 dynamic-list-input(items="entities" default-item="defaultEntity" item-property="name")
   input.form-control(type="text" name="itemName" ng-model="item.name" value="{{item.name}}" placeholder="Entity Name (e.g. Product, Feature, User Story, Data...)")
 
-//- div(ng-repeat="entity in entities")
-//-   input(value="{{entity.name}}")
-
-div
-  h3 Debug
-  div Entities = {{ entities }}
-  div defaultEntity = {{ defaultEntity }}
