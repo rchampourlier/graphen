@@ -2,7 +2,7 @@ describe 'components/directives/dynamic_list_input', ->
 
   $compile = $rootScope = undefined
 
-  beforeEach module('graphen')
+  beforeEach module('dynamic-list-input')
   beforeEach inject ['$compile','$rootScope', ($c, $r) ->
     $compile = $c
     $rootScope = $r

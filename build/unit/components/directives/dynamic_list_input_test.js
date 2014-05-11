@@ -1,7 +1,7 @@
 describe('components/directives/dynamic_list_input', function() {
   var $compile, $rootScope;
   $compile = $rootScope = void 0;
-  beforeEach(module('graphen'));
+  beforeEach(module('dynamic-list-input'));
   beforeEach(inject([
     '$compile', '$rootScope', function($c, $r) {
       $compile = $c;
