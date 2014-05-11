@@ -11,9 +11,24 @@ var less      = require('gulp-less');
 gulp.task('appJS', function() {
   // concatenate compiled .coffee files and js files
   // into build/app.js
-  gulp.src(['!./app/**/*_test.js','./app/**/*.js','!./app/**/*_test.coffee','./app/**/*.coffee'])
+  gulp.src(['./app/**/*.js','./app/**/*.coffee'])
     .pipe(gulpif(/[.]coffee$/, coffee({bare: true}).on('error', gutil.log)))
     .pipe(concat('app.js'))
+    .pipe(gulp.dest('./build'))
+});
+
+gulp.task('testJS', function() {
+  // Compile JS test files. Not compiled.
+  gulp.src([
+      './test/**/*_test.js',
+      './test/**/*_test.coffee'
+    ])
+    .pipe(
+      gulpif(/[.]coffee$/,
+        coffee({bare: true})
+        .on('error', gutil.log)
+      )
+    )
     .pipe(gulp.dest('./build'))
 });
 
@@ -24,20 +39,32 @@ gulp.task('templates', function() {
       './app/**/*.html', './app/**/*.jade'])
       .pipe(gulpif(/[.]jade$/, jade().on('error', gutil.log)))
       .pipe(tplCache('templates.js',{standalone:true}))
-      .pipe(gulp.dest('./build'));
+      .pipe(gulp.dest('./build'))
 });
 
 gulp.task('appCSS', function() {
   // concatenate compiled Less and CSS
   // into build/app.css
-  gulp.src([
-    './app/**/*.less',
-    './app/**/*.css'])
-    .pipe(gulpif(/[.]less$/, less({
-      paths: [ './bower_components/bootstrap/less' ]
-    }).on('error', gutil.log)))    
-    .pipe(concat('app.css'))
-    .pipe(gulp.dest('./build'));
+  gulp
+    .src([
+      './app/**/*.less',
+      './app/**/*.css'
+    ])
+    .pipe(
+      gulpif(/[.]less$/,
+        less({
+          paths: [
+            './bower_components/bootstrap/less'
+          ]
+        })
+        .on('error', gutil.log))
+    )
+    .pipe(
+      concat('app.css')
+    )
+    .pipe(
+      gulp.dest('./build')
+    )
 });
 
 gulp.task('libJS', function() {
@@ -80,7 +107,8 @@ gulp.task('watch',function() {
   });
 
   // watch files to build
-  gulp.watch(['./app/**/*.coffee', './app/**/*.js'], ['appJS']);
+  gulp.watch(['./app/**/*.coffee', '!./app/**/*_test.coffee', './app/**/*.js', '!./app/**/*_test.js'], ['appJS']);
+  gulp.watch(['./test/**/*_test.coffee', './test/**/*_test.js'], ['testJS']);
   gulp.watch(['!./app/index.jade', '!./app/index.html', './app/**/*.jade', './app/**/*.html'], ['templates']);
   gulp.watch(['./app/**/*.less', './app/**/*.css'], ['appCSS']);
   gulp.watch(['./app/index.jade', './app/index.html'], ['index']);
@@ -92,4 +120,4 @@ gulp.task('connect', connect.server({
   livereload: true
 }));
 
-gulp.task('default', ['connect', 'appJS', 'templates', 'appCSS', 'index', 'libJS', 'libCSS', 'watch']);
+gulp.task('default', ['connect', 'appJS', 'testJS', 'templates', 'appCSS', 'index', 'libJS', 'libCSS', 'watch']);

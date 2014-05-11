@@ -34,8 +34,9 @@ Ongoing is the word...
 ### Prerequisites
 
 * NodeJS with NPM: `brew install nodejs`
-* Bower: `npm install bower`
-* Gulp: `npm install gulp`
+* Bower: `npm install -g bower`
+* Gulp: `npm install -g gulp`
+* Karma CLI: `npm install -g karma-cli`
 
 ### Running the project
 
@@ -44,3 +45,4 @@ Ongoing is the word...
     npm install
     bower install
     gulp
+    karma start karma-unit.js
