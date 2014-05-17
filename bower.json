@@ -20,6 +20,7 @@
     "angular-mocks": "latest",
     "angular-bootstrap": "latest",
     "bootstrap": "latest",
-    "lodash": "latest"
+    "lodash": "latest",
+    "react": "latest"
   }
 }

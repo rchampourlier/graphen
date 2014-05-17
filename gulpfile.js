@@ -76,7 +76,8 @@ gulp.task('libJS', function() {
     './bower_components/angular/angular.js',
     './bower_components/angular-route/angular-route.js',
     './bower_components/angular-bootstrap/ui-bootstrap.js',
-    './bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
+    './bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+    './bower_components/react/react-with-addons.js'
     ]).pipe(concat('lib.js'))
       .pipe(gulp.dest('./build'));
 });
