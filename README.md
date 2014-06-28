@@ -45,4 +45,4 @@ Ongoing is the word...
     npm install
     bower install
     gulp
-    karma start karma-unit.js
+    karma start test/karma-unit.js

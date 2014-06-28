@@ -1,7 +1,7 @@
 describe('components/directives/dynamic_list_input', function() {
   var $compile, $rootScope;
   $compile = $rootScope = void 0;
-  beforeEach(module('dynamic-list-input'));
+  beforeEach(module('react-list-input'));
   beforeEach(inject([
     '$compile', '$rootScope', function($c, $r) {
       $compile = $c;
@@ -14,7 +14,7 @@ describe('components/directives/dynamic_list_input', function() {
       name: "Default Name"
     };
     $rootScope.entities = [];
-    template = '<dynamic-list-input items="entities" default-item="defaultEntity" item-property="name"></dynamic-list-input>';
+    template = '<react-list-input items="entities" default-item="defaultEntity" item-property="name"></react-list-input>';
     element = $compile(template)($rootScope);
     return expect(element.html()).toMatch(/ngRepeat: item in items/);
   });

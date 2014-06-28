@@ -1,7 +1,7 @@
 angular.module 'graphen', [
   'ngRoute',
   'ui.bootstrap',
-  'dynamic-list-input',
+  'react-list-input',
   'graphen-home',
   'graphen-entities',
   'templates'

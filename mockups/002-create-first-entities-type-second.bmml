@@ -7,10 +7,12 @@
     </control>
     <control controlID="26" controlTypeID="com.balsamiq.mockups::Button" x="375" y="402" w="-1" h="-1" measuredW="210" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
+        <href>010-list-objects-none-products%26bm%3B010-list-objects-none-products.bmml%26bm%3B010-list-objects-none-products.bmml%26bm%3B010-list-objects-none-products.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22266%2C381%2C476%2C408%22%20href%3D%22010-list-objects-none-products.bmml%22%20alt%3D%22010-list-objects-none-products%22%20id%3D%2226%22/%3E</map>
         <text>Go%20on%20and%20create%20these%20Entities</text>
       </controlProperties>
     </control>
-    <control controlID="27" controlTypeID="com.balsamiq.mockups::Paragraph" x="375" y="205" w="409" h="85" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Paragraph" x="375" y="205" w="409" h="85" measuredW="275" measuredH="80" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text>First%2C%20create%20an%20Entity%20to%20represent%20some%20level%20of%20information%20you%20want%20to%20store%2C%20track%2C%20and%20connect%20to%20others.%0A%20%0AAn%20entity%20is%20like%20a%20category%2C%20a%20class%2C%20a%20genre%2C%20a%20type....%20It%20will%20spawn%20objects%2C%20which%20are%20like%2C%20well%2C%20objects%2C%20or%20instances%20for%20the%20dev%20guys.</text>
       </controlProperties>
