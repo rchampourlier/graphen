@@ -86,13 +86,33 @@ gulp.task('libJS', function() {
 gulp.task('libCSS',
   function() {
   // concatenate vendor css into build/lib.css
-  gulp.src(['!./bower_components/**/*.min.css',
-      './bower_components/**/*.css'])
+  gulp.src([
+      './bower_components/flat-ui-official/bootstrap/css/bootstrap.css',
+      './bower_components/flat-ui-official/bootstrap/css/prettify.css',
+      './bower_components/flat-ui-official/css/flat-ui.css'
+    ])
       .pipe(concat('lib.css'))
       .pipe(gulp.dest('./build'));
 });
 
-gulp.task('index', function() {
+gulp.task('copyFonts',
+  function() {
+    // Copy fonts from libraries to build/fonts
+    gulp.src([
+      'bower_components/flat-ui-official/bootstrap/fonts/**/*.eot',
+      'bower_components/flat-ui-official/bootstrap/fonts/**/*.svg',
+      'bower_components/flat-ui-official/bootstrap/fonts/**/*.ttf',
+      'bower_components/flat-ui-official/bootstrap/fonts/**/*.woff',
+      'bower_components/flat-ui-official/fonts/**/*.eot',
+      'bower_components/flat-ui-official/fonts/**/*.svg',
+      'bower_components/flat-ui-official/fonts/**/*.ttf',
+      'bower_components/flat-ui-official/fonts/**/*.woff',
+    ])
+      .pipe(gulp.dest('build/fonts'));
+  }
+);
+
+gulp.task('htmlIndex', function() {
   gulp.src(['./app/index.jade', './app/index.html'])
     .pipe(gulpif(/[.]jade$/, jade().on('error', gutil.log)))
     .pipe(gulp.dest('./build'));
@@ -156,7 +176,7 @@ gulp.task('watch',function() {
       'app/index.html'
     ]}
   , function() {
-    gulp.start('index');
+    gulp.start('htmlIndex');
   });
 });
 
@@ -166,4 +186,4 @@ gulp.task('connect', connect.server({
   livereload: true
 }));
 
-gulp.task('default', ['connect', 'appJS', 'testJS', 'templates', 'appCSS', 'index', 'libJS', 'libCSS', 'watch']);
+gulp.task('default', ['connect', 'appJS', 'testJS', 'templates', 'appCSS', 'htmlIndex', 'libJS', 'libCSS', 'copyFonts', 'watch']);
