@@ -7,6 +7,7 @@ var concat    = require('gulp-concat');
 var tplCache  = require('gulp-angular-templatecache');
 var jade      = require('gulp-jade');
 var less      = require('gulp-less');
+var watch     = require('gulp-watch');
 
 gulp.task('appJS', function() {
   // concatenate compiled .coffee files and js files
@@ -100,21 +101,63 @@ gulp.task('index', function() {
 gulp.task('watch',function() {
 
   // reload connect server on built file change
-  gulp.watch([
+  watch({
+    'glob': [
       'build/**/*.html',        
       'build/**/*.js',
-      'build/**/*.css'        
-  ], function(event) {
-      return gulp.src(event.path)
-          .pipe(connect.reload());
+      'build/**/*.css'
+    ]})
+    .pipe(connect.reload());
+
+  // Watch files to build
+
+  // App
+  watch({
+    'glob': [
+      './app/**/*.coffee', '!./app/**/*_test.coffee',
+      './app/**/*.js', '!./app/**/*_test.js'
+    ]}
+  , function() {
+    gulp.start('appJS');
   });
 
-  // watch files to build
-  gulp.watch(['./app/**/*.coffee', '!./app/**/*_test.coffee', './app/**/*.js', '!./app/**/*_test.js'], ['appJS']);
-  gulp.watch(['./test/**/*_test.coffee', './test/**/*_test.js'], ['testJS']);
-  gulp.watch(['!./app/index.jade', '!./app/index.html', './app/**/*.jade', './app/**/*.html'], ['templates']);
-  gulp.watch(['./app/**/*.less', './app/**/*.css'], ['appCSS']);
-  gulp.watch(['./app/index.jade', './app/index.html'], ['index']);
+  // Test
+  watch({
+    'glob': [
+      './test/**/*_test.coffee', './test/**/*_test.js'
+    ]}
+  , function() {
+    gulp.start('testJS');
+  });
+
+  // Templates
+  watch({
+    'glob': [
+      '!./app/index.jade', '!./app/index.html',
+      './app/**/*.jade', './app/**/*.html'
+    ]}
+  , function() {
+    gulp.start('templates');
+  });
+
+  // Stylesheets
+  watch({
+    'glob': [
+      './app/**/*.less',
+      './app/**/*.css'
+    ]}
+  , function() {
+    gulp.start('appCSS');
+  });
+
+  watch({
+    'glob': [
+      './app/index.jade',
+      './app/index.html'
+    ]}
+  , function() {
+    gulp.start('index');
+  });
 });
 
 gulp.task('connect', connect.server({
