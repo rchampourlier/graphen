@@ -114,8 +114,8 @@ gulp.task('watch',function() {
   // App
   watch({
     'glob': [
-      './app/**/*.coffee', '!./app/**/*_test.coffee',
-      './app/**/*.js', '!./app/**/*_test.js'
+      'app/**/*.coffee', '!app/**/*_test.coffee',
+      'app/**/*.js', '!app/**/*_test.js'
     ]}
   , function() {
     gulp.start('appJS');
@@ -124,7 +124,7 @@ gulp.task('watch',function() {
   // Test
   watch({
     'glob': [
-      './test/**/*_test.coffee', './test/**/*_test.js'
+      'test/**/*_test.coffee', 'test/**/*_test.js'
     ]}
   , function() {
     gulp.start('testJS');
@@ -133,8 +133,8 @@ gulp.task('watch',function() {
   // Templates
   watch({
     'glob': [
-      '!./app/index.jade', '!./app/index.html',
-      './app/**/*.jade', './app/**/*.html'
+      '!app/index.jade', '!app/index.html',
+      'app/**/*.jade', 'app/**/*.html'
     ]}
   , function() {
     gulp.start('templates');
@@ -143,8 +143,8 @@ gulp.task('watch',function() {
   // Stylesheets
   watch({
     'glob': [
-      './app/**/*.less',
-      './app/**/*.css'
+      'app/**/*.less',
+      'app/**/*.css'
     ]}
   , function() {
     gulp.start('appCSS');
@@ -152,8 +152,8 @@ gulp.task('watch',function() {
 
   watch({
     'glob': [
-      './app/index.jade',
-      './app/index.html'
+      'app/index.jade',
+      'app/index.html'
     ]}
   , function() {
     gulp.start('index');
