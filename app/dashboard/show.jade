@@ -1,0 +1,29 @@
+nav.navbar.navbar-inverse.navbar-embossed(role="navigation")
+  .container-fluid
+    .navbar-header
+
+      // Collapsing for mobile display
+      button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="#") Graphen
+
+    .collapse.navbar-collapse
+      
+      form.navbar-form.navbar-left(role="search")
+        .form-group
+          input.form-control(type="text" placeholder="Search in all entities")
+
+a.btn.btn-primary(href="#/entities/new").
+  Add new entity
+
+div(ng-repeat="entity in entities")
+
+  h3
+    {{ entity.name }}
+
+  .tagsinput
+    span.tag(ng-repeat="instance in entity.instances" ng-click="clickEntityInstance(instance)")
+      {{ instance.name }}

@@ -4,3 +4,6 @@
 .panel-title a {
   cursor: pointer;
 }
+body {
+  margin-top: 1em;
+}

@@ -1,11 +1,11 @@
 angular.module 'graphen', [
   'ngRoute',
   'ui.bootstrap',
-  'graphen-home',
+  'graphen-dashboard',
   'graphen-entities',
   'templates'
 ]
   .config ($routeProvider) ->
     $routeProvider
       .otherwise
-        redirectTo: '/'
+        redirectTo: '/' # handled by dashboard/dashboard_controller
