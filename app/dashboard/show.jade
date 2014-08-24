@@ -21,9 +21,9 @@ a.btn.btn-primary(href="#/entities/new").
 
 div(ng-repeat="entity in entities")
 
-  h3
+  h3.
     {{ entity.name }}
 
-  .tagsinput
-    span.tag(ng-repeat="instance in entity.instances" ng-click="clickEntityInstance(instance)")
+  .entity-tags
+    span.entity-tag(ng-repeat="instance in entity.instances" ng-click="clickEntityInstance(instance)").
       {{ instance.name }}

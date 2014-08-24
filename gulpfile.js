@@ -55,10 +55,11 @@ gulp.task('appCSS', function() {
       gulpif(/[.]less$/,
         less({
           paths: [
-            './bower_components/bootstrap/less'
+            './bower_components/flat-ui-official/less'
           ]
         })
-        .on('error', gutil.log))
+        .on('error', gutil.log)
+      )
     )
     .pipe(
       concat('app.css')

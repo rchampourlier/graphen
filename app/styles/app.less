@@ -1,6 +1,42 @@
+@import "mixins";
+@import "variables";
+
 // Styles for angular-bootstrap
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 body {
   margin-top: 1em;
+}
+
+.entity-tags {
+  background: white;
+  border: 2px solid @brand-secondary;
+  border-radius: @border-radius-large;
+  height: 100px;
+  margin-bottom: 18px;
+  padding: 6px 1px 1px 6px;
+  overflow-y: auto;
+  text-align: left;
+
+  .entity-tag {    
+    border-radius: @border-radius-base;
+    background-color: @brand-secondary;
+    color: @inverse;
+    font-size: ceil(@component-font-size-base * 0.933); // ~14px
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    line-height: 15px;
+    padding: 6px 13px 8px 19px;
+    position: relative;
+    vertical-align: middle;
+    .transition(.25s linear);
+
+    &:hover {
+      background-color: mix(@brand-secondary, black, 85%);
+      color: @inverse;
+    }
+  }
 }
